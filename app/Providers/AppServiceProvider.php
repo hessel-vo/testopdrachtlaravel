@@ -16,7 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function register(): void
     {
         // Register the repository interface binding
-        $this->app->bind(ProductRepositoryInterface::class, PlainSqlProductRepository::class);
+        $this->app->bind(ProductRepositoryInterface::class, EloquentProductRepository::class);
     }
 
     /**
