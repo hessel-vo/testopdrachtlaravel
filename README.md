@@ -16,7 +16,7 @@ Copy `.env.example` and rename to `.env`.\
 Configure `.env` file as needed.
 
 Ensure database configuration matches `.env`.\
-Default database is `sqlite`, requires creating a `"database.\sqlite"` file in `\testopdrachtlaravel\database\`. 
+Default database is `sqlite`, requires creating a `"database.sqlite"` file in `\testopdrachtlaravel\database\`. 
 
 Generate app key:\
 `php artisan key:generate`
