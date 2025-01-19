@@ -53,5 +53,13 @@ Example:\
 `php artisan products:price-increase 10` queues job to increase all product prices by 10%.\
 `php artisan products:price-decrease 20` queues job to decrease all product prices by 20%.
 
+**Tests**
+
+Tests cases have been implemented for the product CRUD functionality.\
+Run tests with:\
+`php artisan test`, runs all tests (including product tests and default Laravel Breeze tests)
+
+Tests are currently configured to use the same default `database.sqlite` file as testing database. Database will be reset after tests and will need to be seeded again.
+
 ---
 Note: By default the application uses the Eloquent implementation of database management for products. To use the plain sql implementation, in `\app\Providers\AppServiceProvider.php`, switch `EloquentProductRepository` to `PlainSqlProductRepository`.
